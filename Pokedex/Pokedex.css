@@ -1,0 +1,77 @@
+.Titulo{
+    color: rgb(41, 113, 221);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 70px;
+    font-weight: 600;
+    text-align: center;
+}
+body{
+    background-color: rgb(61, 233, 181);
+}
+.Pokebola{
+    width: 79px;
+}
+.Botondebusqueda {
+    background-color: #05fbf9;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    border-radius: 100%;
+}
+.BotonP{
+    width: 30px;
+}
+.PosicionAzul{
+    position: relative;
+    top: 285px; left: 672px;
+}
+.Imagendepokemon{
+    height: 164px;
+    width: auto;
+    border-radius: 10%;
+    position: relative;
+    top: -340px; left: 693px;
+}
+.Pokedexposicion{
+    position: relative;
+    top: -10px; left: 650px;
+}
+.Nombrepoke{
+    position: relative;
+    top: -250px; left: 732px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+}
+.NumeroPokedex{
+    position: relative;
+    top: -425px; left: 1020px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+}
+.Tipopokemon{
+    position: relative;
+    top: -382px; left: 1142px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+}
+.Estadisticaspokemon{
+    position: relative;
+    top: -530px; left: 1030px;
+    background-color: #30fa04;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+}
+.Cuadrodehabilidades{
+    font-size: 10px;
+    position: relative;
+    top: -603px; left: 190px;
+    width: 275px;
+}
+.Colordeinicio {
+    background-color: #509bff;
+}
+.Colordeseccion {
+    background-color: #05fbf9;
+    color: black;
+}

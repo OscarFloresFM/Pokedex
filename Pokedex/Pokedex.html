@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Pokedex.css">
+</head>
+<body class="">
+    <br><br>
+    <h1 class="Titulo container-fluid"><img src="https://imagenpng.com/wp-content/uploads/2016/09/Pokebola-pokeball-png-2.png" alt="Pokebola" class="Pokebola">Pokedex</h1><br>
+    <div class="col-4 container-fluid">
+        <input class="form-control form-control-lg" type="text" placeholder="Escoge tu pokemon" aria-label="Buscador de pokemons" id="pokeName" name="pokeName">
+    </div>
+    <br><br><br>
+    <div>
+        <img src="https://foto.askix.com/upload/3/6f/36f3301303a639ccc56d8262ae374e66.gif" alt="PokedexFullpower" class="Pokedexposicion">
+    </div>
+    <div class="position-absolute top-40 PosicionAzul container-fluid">
+        <button type="button" class="btn Botondebusqueda" onclick="fetchpokemon()"><img src="Recursos\Pokeball.png" alt="Pokebol" class="BotonP"></button>
+    </div>
+    <div>
+        <img src="Recursos\simple_pokeball.gif" alt="Pokebola" class="Imagendepokemon" id="pokeImg">
+    </div>
+    <div>
+        <button type="button" class="btn Nombrepoke" id="pokenombre">Nombre =<br> <span id="name-screen"></span></button>
+    </div>
+    <div>
+        <table class="Estadisticaspokemon">
+            <tr>
+                <td>Vida =</td>
+                <td><span id="Vida"></span></td>
+                <td>hp</td>
+            </tr>
+            <tr>
+                <td>Ataque =</td>
+                <td><span id="Fuerza"></span></td>
+                <td>attack</td>
+            </tr>
+            <tr>
+                <td>Defenza =</td>
+                <td><span id="Defenza"></span></td>
+                <td>defense</td>
+            </tr>
+            <tr>
+                <td>Velocidad =</td>
+                <td><span id="Agilidad"></span></td>
+                <td>speed</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <button type="button" class="btn Tipopokemon">Tipo = <br><span id="ElementoT"></span></button>
+    </div>
+    <div>
+        <button type="button" class="btn NumeroPokedex">No. de <br> Pokedex = <span id="Noxpokedex"></span></button>
+    </div>
+    <div class="col-6 container-fluid Cuadrodehabilidades">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button Colordeinicio" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Habilidades
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body Colordeseccion">
+                  <span id="habilidades"></span>
+                  <span id="habilidades1"></span>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <script src="Pokedex.js"></script>
+</footer>
+</html>
